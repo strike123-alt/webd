@@ -1,0 +1,80 @@
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+.img-c{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 28px;
+  }
+
+.home-img{
+
+    height: 580px;
+    width: 100%;
+}
+.bloc-img{
+
+    position: absolute;
+    bottom: 15%;
+    right: 50%;
+    left: 50%;
+    color: white;
+    padding: 20px;
+}
+.alt-text{
+    font-size: 20px;
+}
+
+.ct{
+    text-align: center;
+}
+
+/* .error-text{
+    color: red;
+    text-align: justify;
+} */
+
+/* .sb{
+  position: relative;
+  right: auto;
+} */
+
+.bt{
+  width: 20%;
+  height: 0.8%;
+}
+
+.books-cls{
+   height: 300px;
+   width: 250px;
+}
+
+.pad{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.books-cls:hover, .img-set:hover{
+  transition: ease-in-out;
+  transform: translateY(-15px) translateX(15px);
+}
+
+.img-set{
+  width: 275px;
+  height: 375px;
+  padding: 5px;
+  position: relative;
+  left: 5%;
+  top: 18px;
+}
+
+
+.padt{
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.padr{
+  margin-left: 25%;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "/bootstrap/css/bootstrap.css">
+    <link rel = "stylesheet" href = "styles.css">
+    <script src = "/bootstrap/js/bootstrap.js"></script>
+    <script src =  "index.js"></script>
+    <title>OS-Round Robin</title>
+</head>
+<body>
+   
+        <h1 id = "rr0">Round-Robin</h1>
+       
+        <form action = "" name = "f1" onsubmit="valid()">
+            <div class="form-group col-2"></div>
+            <label for = "p1">Number of Process: </label> 
+            <input type = "number"  name = "p1" id = "rr1" max = 5 min = 1>
+            </div>
+            <br>
+            <br>
+            <div class="form-group col-2"></div>
+            <label for = "q1">Time Quantum: </label> 
+            <input type = "number" name = "q1" id = "rr2" max = 3 min = 1>
+            </div>
+            <br>
+            <br>
+            <div class="form-group col-2"></div>
+            <label for = "ran1">Set Speed: </label>
+            <input type = "range" name = "osr1" id = "rr3" min = 0 max = 100 step = 20>
+            </div>
+            <br>
+            <br>
+            <input type = "submit" name = "save" id = "s1">
+            <br>           
+        </form>
+        <br>
+        <br>
+        <div id = "t1"></div>
+        <script>
+            function createTable(){
+                let a = document.getElementById("rr1").value;
+                let b = document.getElementById("rr2").value;
+                
+                table = '<table class = "table table-hover">' + 
+                        '<tr>' + '<th>Process</th>' + '<th>Arrival Time</th>' + '</tr>' + '<table>';
+
+                document.getElementById('t1').innerHTML = table;
+
+            }
+        </script>
+        
+</body>
+
+</html>

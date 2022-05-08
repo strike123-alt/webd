@@ -1,0 +1,191 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="images/favi.ico" />
+    <title>eBook</title>
+    <script>
+      $(document).ready(function () {
+        $(".show-tog").hide();
+        $(".show-content").click(function () {
+            $(".show-tog").toggle();
+            $(".show-content").hide();
+        });
+        $(".hid-content").click(function () {
+            $(".show-tog").toggle();
+            $(".show-content").show();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/favi.ico"
+          alt="brand"
+          class="img1 img-responsive img-circle"
+          width="20%"
+          height="30%"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link alt-text" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active alt-text" active href="book.html"
+              >Books</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link alt-text" href="sign_up.html">Sign-Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link alt-text" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-lg-3">
+        <div class = "pad">
+            <img src="book1.jpg" class="img-set" alt="The Python hard way">
+        </div>
+        <br>
+        <div class = "pad"></div>
+      </div>
+      <div class="col-lg-9">
+        <div class="container">
+          <h3 class="text-success">
+            Title: Learn Python 3 the Hard Way: A Very Simple Introduction to
+            the Terrifyingly Beautiful World of Computers and Code
+          </h3>
+          <p>Author by: <em>Zed A.show</em></p>
+
+          <section>
+            <h4>You Will Learn Python 3!</h4>
+            <p>
+              Zed Shaw has perfected the world’s best system for learning Python
+              3. Follow it and you will succeed—just like the millions of
+              beginners Zed has taught to date! You bring the discipline,
+              commitment, and persistence; the author supplies everything else.
+            </p>
+            <p>
+              In Learn Python 3 the Hard Way, you’ll learn Python by working
+              through 52 brilliantly crafted exercises. Read them. Type their
+              code precisely. (No copying and pasting!) Fix your mistakes. Watch
+              the programs run. As you do, you’ll learn how a computer works;
+              what good programs look like; and how to read, write, and think
+              about code. Zed then teaches you even more in 5+ hours of video
+              where he shows you how to break, fix, and debug your code—live, as
+              he’s doing the exercises.
+            </p>
+            <a href="#"><p class="show-content">Read More</p></a>
+            <div class = "show-tog">
+            <p>
+            Install a complete Python environment<br>
+            Organize and write code<br>
+            Fix and break code<br>
+            Basic mathematics<br>
+            Variables<br>
+            Strings and text<br>
+            Interact with users<br>
+            Work with files<br>
+            Looping and logic<br>
+            Data structures using lists and dictionaries<br>
+            Program design
+            </p>
+            <a href="#"><p class="hid-content">Read Less</p></a>
+            </div>
+            
+          </section>
+
+          <table >
+            <tr>               
+                <td class = "padt">    
+                   Edition:       
+                </td>
+                <td class = "padt">    
+                    1       
+                 </td>
+                 <td class = "padr">    
+                    Year:      
+                 </td>
+                 <td class = "padr">    
+                    2017       
+                  </td>
+            </tr>
+            <tr>               
+                <td class = "padt">    
+                    Language:       
+                </td>
+                <td class = "padt">    
+                    English 
+                 </td>
+                 <td class = "padr">    
+                    Year:      
+                 </td>
+                 <td class = "padr">    
+                    2017       
+                  </td>
+            </tr>
+            <tr>               
+                <td class = "padt">    
+                    ISBN 10:       
+                </td>
+                <td class = "padt">    
+                    0134692888
+                </td>
+                <td class = "padt">    
+                    Publisher:      
+                 </td>
+                 <td class = "padt">    
+                    Addison-Wesley Professional       
+                  </td>
+            </tr>
+            <tr>               
+                <td class = "padt">    
+                    Series:       
+                </td>
+                <td class = "padt">    
+                    Zed Shaw's Hard Way Series
+                </td>
+                <td class = "padr">    
+                    Pages:      
+                 </td>
+                 <td class = "padr">    
+                    320/321      
+                  </td>
+            </tr>
+        </table>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

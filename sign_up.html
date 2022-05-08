@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+    <link rel="icon" href="images/favi.ico" />
+    <title>eBook</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/favi.ico"
+          alt="brand"
+          class="img1 img-responsive img-circle"
+          width="20%"
+          height="30%"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link alt-text" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link alt-text" href="book.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active alt-text" href="sign_up.html">Sign-Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link alt-text" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title ct"><em>Sign Up</em></h3>
+            <br />
+            <form
+              action="http://localhost:3000/sign_up"
+              onsubmit="return valid()"
+              method="post"
+            >
+              <div class="form-group">
+                <label for="fname">Full Name:</label>
+                <input type="text" name="fname" id="f1" class="form-control" />
+                <span
+                  id="name-error"
+                  class="text-danger font-weight-bold"
+                ></span>
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="uname">User-Name:</label>
+                <input type="text" name="uname" id="u1" class="form-control" />
+                <span
+                  id="uname-error"
+                  class="text-danger font-weight-bold"
+                ></span>
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="pname">Password:</label>
+                <input
+                  type="password"
+                  name="pname"
+                  id="p1"
+                  class="form-control"
+                />
+                <span
+                  id="pass-error"
+                  class="text-danger font-weight-bold"
+                ></span>
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="e-m">E-mail:</label>
+                <input type="text" name="e_m" id="e1" class="form-control" />
+                <span
+                  id="email-error"
+                  class="text-danger font-weight-bold"
+                ></span>
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="e-m">Mobile Number:</label>
+                <input type="text" name="mob" id="m1" class="form-control" />
+                <span id="mn-error" class="text-danger font-weight-bold"></span
+                ><br />
+                <div class="form-group">
+                  <div class="text-center">
+                    <input
+                      type="submit"
+                      value="Save"
+                      class="btn btn-success bt"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br /><br />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <br /><br />
+  </body>
+</html>
